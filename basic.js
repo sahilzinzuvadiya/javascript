@@ -1,5 +1,5 @@
 //Write a program to take marks as input and display the grade
-let a=prompt("Enter marks:");
+let a=parseInt(prompt("Enter marks:"));
 if(a>=90 && a<=100)
 {
     console.log("Grade is A+");
@@ -25,7 +25,7 @@ else{
 }
 
 // Write a program that takes the number of electricity units consumed and calculates the bill 
-let b=prompt("Enter Units:");
+let b=parseInt(prompt("Enter Units:"));
 if(b<=100)
 {
     let ans=b*5;
@@ -48,15 +48,15 @@ else{
 }
 
 // Write a program to calculate Simple Interest 
-let p=prompt("Enter Principle amount:");
-let r=prompt("Enter Rate amount:");
-let n=prompt("Enter Time (in year):");
+let p=parseInt(prompt("Enter Principle amount:"));
+let r=parseInt(prompt("Enter Rate amount:"));
+let n=parseInt(prompt("Enter Time (in year):"));
 let si=p*r*n/100;
 let res1=`Simple Interest is=${si}`
 console.log(res1);
 
 //Write a program to calculate Net Salary of an employee after deducting tax
-let sal = prompt("Enter Salary:");
+let sal = parseInt(prompt("Enter Salary:"));
 if (sal <= 50000) {
     console.log("Don't take any type of Tax");
 
@@ -79,7 +79,7 @@ else {
 }
 
 // Check number is even or odd 
-let num=prompt("Enter a number:");
+let num=parseInt(prompt("Enter a number:"));
 if(num%2==0)
 {
     let num1=`${num} number is even`
