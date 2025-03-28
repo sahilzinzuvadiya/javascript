@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid green;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+.hide{
+    display: flex;
+}
+.menu{
+    display: none;
+}
+.close{
+    .menu{
+        display: flex;
+    }
+    .hide{
+        display: none;
+    }
+}

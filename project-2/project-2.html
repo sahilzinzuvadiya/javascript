@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- section-1 -->
+    <div class="w-full h-[840px] bg-cover bg-center bg-no-repeat max-sm:w-[100%]"
+        style="background-image: url(./section-1.jpg);">
+        <!-- Nabar -->
+        <div class="flex justify-between pt-10">
+            <h1 class="font-bold text-xl ml-25 max-sm:ml-3 max-sm:text-[16px] max-sm:pt-2">A U T O N O</h1>
+            <div class="text-[15px] flex gap-8 max-sm:gap-5 max-sm:w-[45%]">
+                <a href="#sec-1" class="hover:text-yellow-700 duration-400 max-sm:hidden">Technology</a>
+                <a href="#sec-2" class="hover:text-yellow-700 duration-400 max-sm:hidden">About</a>
+                <a href="#sec-3" class="hover:text-yellow-700 duration-400 max-sm:hidden">Careers</a>
+                <button
+                    class="w-30 h-8 text-[15px] text-white bg-black border border-black rounded-[8px] mr-25 max-sm:mr-0 max-sm:w-20 max-sm:text-[13px] hover:bg-white hover:text-black duration-[1s]">Subscribe</button>
+                <P class="text-[25px] hidden max-sm:block max-sm:mr-3" onclick="show()" id="menu"><i
+                        class="fa-solid fa-bars"></i>
+                </P>
+                <div class="bg-white w-[50%] h-[150px] flex flex-col  absolute top-[80px] left-[155px] hidden"
+                    id="menubtn">
+                    <a href="#"
+                        class="hover:bg-yellow-300  absolute top-[10px] left-[10px] w-[92%]">Technology</a>
+                    <a href="#" class="hover:bg-yellow-300  absolute top-[60px] left-[10px] w-[92%]">About</a>
+                    <a href="#" class="hover:bg-yellow-300  absolute top-[110px] left-[10px] w-[92%]">Careers</a>
+                    
+                    <P class="text-[25px] max-sm:block max-sm:mr-3 absolute bottom-[146px] left-[123px]"
+                        onclick="show()" id="close"><i class="fa-solid fa-xmark"></i></P>
+                </div>
+            </div>
+
+        </div>
+
+        <P class="text-center text-6xl mt-15 tracking-wider max-sm:text-[28px]">THE FUTURE OF<br></P>
+        <P class="text-center text-6xl mt-5 tracking-wider max-sm:text-[28px]">MOBILITY IS HERE</P>
+        <P class="text-center text-2xl mt-8 max-sm:text-xl">Discover the safest self-driving experience with Autono.</P>
+
+    </div>
+    <!-- section-2 -->
+    <div class="flex" id="sec-1">
+        <div class="w-[50%] h-auto p-10">       
+            <img src="./section-5.jpg" alt="" class="bg-cover bg-no-repeat bg-center w-[100%] h-[360px]">
+        </div>
+        <div class="w-[50%] p-10">
+            <P class="leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Suscipit ea provident earum assumenda dignissimos<br> consectetur temporibus, excepturi, rerum nesciunt<br> officiis expedita et odit animi voluptate consequatur<br> odio, deleniti tempora quam!
+
+            </P>
+            <P class="pt-5 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Suscipit ea provident earum assumenda dignissimos<br> consectetur temporibus, excepturi, rerum nesciunt<br> officiis expedita et odit animi voluptate consequatur<br> odio, deleniti tempora quam!
+
+            </P>
+            <button class="w-30 h-10 bg-black text-white rounded-[8px] mt-5 hover:bg-white hover:text-black duration-[1s]">
+                Read More
+            </button>
+        </div>
+    </div>
+    <!-- section-3 -->
+    <div class="flex" id="sec-2">
+        
+        <div class="w-[50%] p-10">
+            <P class="leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Suscipit ea provident earum assumenda dignissimos<br> consectetur temporibus, excepturi, rerum nesciunt<br> officiis expedita et odit animi voluptate consequatur<br> odio, deleniti tempora quam!
+
+            </P>
+            <P class="pt-5 leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Suscipit ea provident earum assumenda dignissimos<br> consectetur temporibus, excepturi, rerum nesciunt<br> officiis expedita et odit animi voluptate consequatur<br> odio, deleniti tempora quam!
+
+            </P>
+            <button class="w-30 h-10 bg-black text-white rounded-[8px] mt-5 hover:bg-white hover:text-black duration-[1s]">
+                Read More
+            </button>
+        </div>
+        <div class="w-[50%] h-auto p-10">       
+            <img src="./section-6.jpg" alt="" class="bg-cover bg-no-repeat bg-center w-[100%] h-[360px]">
+        </div>
+    </div>
+    <!-- section-4 -->
+     <div id="sec-3">
+        <p class="text-center text-5xl leading-17">PERCEPTION ENABLED <br> TECHNOLOGY</p>
+        <img src="./1.jpg" alt="" class="w-[100%] h-[500px]">
+        <p class="text-center text-2xl leading-10">Click here to edit this paragraph and add your own <br> content. This is a great place to expand on the title and <br>any relevant details or information.</p>
+     </div>
+    <script src="basic.js"></script>
+</body>
+
+</html>
