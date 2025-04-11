@@ -12,7 +12,7 @@
         <style>
             .img-slider{
                 width: 700px;
-                /* border: 1px solid black; */
+                border: 1px solid black;
                 overflow: hidden;
                 margin: auto;
                 margin-top: 100px;
@@ -20,8 +20,13 @@
             .slider{
                 display: flex;
                 transition: 1.5s;
+                flex: 0 0 100%;
+                height: 400px;
+                background-size: cover;
+                background-position: center;
             }
             .slide{
+                /* background-image: url(./images/box1_image.jpg); */
                 flex: 0 0 100%;
                 height: 400px;
                 background-size: cover;
@@ -33,7 +38,7 @@
                 top:240px;
                 left:280px;
                 font-size: 45px;
-                
+                /* border: 1px solid black; */
             }
             .arrow1{
                 position: absolute;
@@ -47,11 +52,21 @@
 <body>
     <div class="img-slider">
         <div class="slider">
-        <img src="./box1_image.jpg" class="slide active" alt="">
+        
+         <div style="background-image: url(./box1_image.jpg);" class="slide active"></div> 
+
+         <div style="background-image: url(box2_image.jpg);" class="slide"></div> 
+
+         <div style="background-image: url(box3_image.jpg);" class="slide"></div>
+
+          <div style="background-image: url(box4_image.jpg);" class="slide"></div>
+
+            <div style="background-image: url(box5_image.jpg);" class="slide"></div>
+             <!-- <img src="./box1_image.jpg" class="slide active" alt="">
         <img src="./box2_image.jpg" class="slide" alt="">
         <img src="./box3_image.jpg" class="slide" alt="">
         <img src="./box4_image.jpg" class="slide" alt="">
-        <img src="./box5_image.jpg" class="slide" alt="">
+        <img src="./box5_image.jpg" class="slide" alt=""> -->
         </div>
          <div class="slider-btn">
             <P class="arrow" onclick="prev()"><i class="fa-solid fa-circle-arrow-left"></i></P>

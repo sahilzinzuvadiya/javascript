@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Components</title>
+    <style>
+        body {
+            border: 1px solid black;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .heading {
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            color: blue;
+        }
+
+        .menu {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            font-size: 20px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: blue;
+            color: white;
+            transition-duration: 0.5s;
+        }
+
+        .sub-menu {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .sub-menu a {
+            text-decoration: none;
+        }
+
+        .sub-menu a:hover {
+            background-color: blue;
+            color: white;
+            transition-duration: 0.5s;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .searchbox{
+            width: 400px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid gray;
+        }
+        .searchbox::placeholder{
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .search-btn{
+            width: 85px;
+            height: 33px;
+            background-color: green;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            margin-left:1px;
+        }
+        .search-btn:hover{
+            background-color: rgb(14, 105, 14);
+            transition-duration: 0.3s;
+        }
+        .image{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 70px;
+            margin-top: 50px;
+        }
+        .image img{
+            width: 230px;
+            height: 230px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading -->
+    <P class="heading">PC COMPONENTS</P>
+    
+    <!-- menus -->
+    <div class="menu">
+        <a href="#"
+            style="border: 1px solid blue; width: 60px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;" onclick="All()">ALL</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 70px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;" onclick="cpu()">CPU</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 110px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;" onclick="memory()">MEMORY</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 175px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">MOTHERBOARD</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 50px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">OS</a>
+    </div>
+    <div class="sub-menu">
+        <a href="#"
+            style="border: 1px solid blue; width: 170px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">INPUT
+            DEVICE</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 175px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">OUTPUT
+            DEVICE</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 125px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">SOFTWARE</a>
+        <a href="#"
+            style="border: 1px solid blue; width: 100px; height: 28px;text-align: center;padding-top: 5px;border-radius: 5px;">OTHRES</a>
+    </div>
+
+    <!-- searchbox -->
+     <div class="search">
+    <input type="text" placeholder="Search item" class="searchbox">
+     <button class="search-btn">Search</button>
+     </div>
+     
+    <!-- images -->
+     <div class="image" id="image">
+        <img src="./images/ssd.jpg" alt="" style="margin-left: 100px;">
+        <img src="./images/hdd.jpg" alt="">
+        <img src="./images/m.2.jpg" alt="">
+        <img src="./images/ram.jpg" alt="">
+     
+        <img src="./images/intel.jpg" alt="" style="margin-left: 100px;" class="intel">
+        <img src="./images/amd.jpg" alt="" class="amd">
+        <img src="./images/microsoft.jpg" alt="">
+        <img src="./images/linux.jpg" alt="">
+        
+        <img src="./images/mac.png" alt="" style="margin-left: 100px;">
+        <img src="./images/mouse.png" alt="">
+        <img src="./images/keyboard.jpg" alt="">
+        <img src="./images/mic.jpg" alt="">
+     
+        <img src="./images/monitor.png" alt="" style="margin-left: 100px;">
+        <img src="./images/printer.jpg" alt="" >
+        <img src="./images/projector.jpg" alt="" >
+        <img src="./images/speaker.jpg" alt="">
+     
+        <img src="./images/gigabyte.jpg" alt="" style="margin-left: 100px;">
+        <img src="./images/msi.jpg" alt="" >
+        <img src="./images/asrock.jpg" alt="">
+        <img src="./images/application.png" alt="">
+     
+        <img src="./images/system.png" alt="" style="margin-left: 100px;">
+        <img src="./images/psu.jpg" alt="">
+        <img src="./images/graphics.jpg" alt="">
+        <img src="./images/flash-drive.jpg" alt="">
+     
+    <img src="./images/casing.jpg" alt="" style="margin-left: 100px;">
+        <img src="./images/dvd.jpg" alt="">
+        <img src="./images/cooler.jpg" alt="">
+        <img src="./images/ups.jpg" alt="">
+     </div>
+    
+     <script src="./test.js"></script>
+</body>
+
+</html>
