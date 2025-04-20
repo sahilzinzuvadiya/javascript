@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Timer</title>
+  <style>
+    .main{
+        border: 1px solid black;
+        width:430px;
+        height: 270px;
+        position: absolute;
+        left: 35%;
+        top:30%;
+        background-color:lightcyan;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 35px;
+        color: lightcoral;
+        margin-top: 130px;
+        text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    #hours{
+        position: absolute;
+        left: 22%;
+        width: 215px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    #minutes{
+        position: absolute;
+        left: 22%;
+        width: 215px;
+        height: 20px;
+        margin-top: 40px;
+    }
+    #seconds{
+        position: absolute;
+        left: 22%;
+        width: 215px;
+        height: 20px;
+        margin-top: 60px;
+    }
+    .btn{
+        position: absolute;
+        top: 140px;
+        left: 150px;
+        width: 115px;
+        height: 35px;
+        background-color:lightcoral;
+        border: none;
+        color: white;
+    }
+    .btn:hover{
+        background-color: rgb(241, 76, 76);
+    }
+    #display{
+        position: absolute;
+        top: 195px;
+        left: 120px;
+        font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="heading">Timer Project</h2>
+  <div class="main">
+  <input type="number" id="hours" placeholder="Enter Hours"><br>
+  <input type="number" id="minutes" placeholder="Enter Minutes"><br>
+  <input type="number" id="seconds" placeholder="Enter Seconds"><br>
+  <button onclick="startTimer()" class="btn">Start Timer</button>
+
+  <div id="display">00:00:00</div>
+</div>
+  <script>
+    let timerInterval;
+
+    function startTimer() {
+      let hrs = parseInt(document.getElementById('hours').value);
+      let mins = parseInt(document.getElementById('minutes').value);
+      let secs = parseInt(document.getElementById('seconds').value);
+
+      let totalSeconds = hrs * 3600 + mins * 60 + secs;
+
+      timerInterval = setInterval(() => {
+        if (totalSeconds <= 0) {
+        document.getElementById('display').textContent = "Time's up!";
+          return;
+        }
+
+        totalSeconds--;
+
+        let h = Math.floor(totalSeconds / 3600);
+        let m = Math.floor(totalSeconds / 60);
+        let s = totalSeconds % 60;
+
+    let formattedTime =
+        (h < 10 ? "0" + h : h) + ":" +
+        (m < 10 ? "0" + m : m) + ":" +
+        (s < 10 ? "0" + s : s);
+
+      document.getElementById('display').textContent = formattedTime;
+    }, 1000);
+  }
+  </script>
+
+</body>
+</html>
