@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mainsec" class="main"></div>
+    
+    <script>
+      let mainsec = document.getElementById("mainsec");
+      let items = JSON.parse(localStorage.getItem("cart"));
+    
+      if (!items || items.length == 0) {
+        mainsec.innerHTML = "No item in cart.";
+      } else {
+        items.forEach(item => {
+          let img = document.createElement("img");
+          img.src = item.image;
+          img.classList.add("image");
+    
+          let div1 = document.createElement("div");
+          div1.classList.add("card");
+    
+          let title = document.createElement("p");
+          title.innerText = item.title;
+          title.classList.add("title");
+    
+          let description = document.createElement("p");
+          description.innerText = item.description;
+          description.classList.add("description");
+    
+          let category = document.createElement("p");
+          category.innerText = item.category;
+          category.classList.add("category");
+    
+          let price = document.createElement("p");
+          price.innerText = `Price: $${item.price}`;
+          price.classList.add("price");
+    
+          let rating = document.createElement("p");
+          rating.innerText = `Rating: ${item.rating.rate} (${item.rating.count} reviews)`;
+          rating.classList.add("rating");
+    
+          div1.append(img, title, description, category, price, rating);
+          mainsec.append(div1);
+        });
+      }
+    </script>
+    
+      
+</body>
+</html>
