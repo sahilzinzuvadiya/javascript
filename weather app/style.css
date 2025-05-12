@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* index.html */
+body {
+    background-color: rgb(1, 1, 19, 30);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.box1 {
+    /* border: 1px solid white; */
+    width: 32%;
+    height: 500px;
+
+}
+
+.image {
+    background-color: rgb(32, 43, 59);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.box1 img {
+    height: 450px;
+    width: 75%;
+
+}
+
+.box2 {
+    /* border: 1px solid white; */
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.box2 h1 {
+    color: white;
+    margin-top: 12px;
+}
+
+.box2 h5 {
+    color: grey;
+    margin-top: 3px;
+}
+
+.box2 button {
+    margin-top: 35px;
+    width: 110px;
+    height: 35px;
+    background-color: rgb(68, 163, 255);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.box2 button:hover {
+    background-color: rgb(33, 139, 245);
+}
+
+/* weather.html */
+.main {
+    background-color: rgb(1, 1, 19, 30);
+}
+
+.searchbar {
+    /* border: 1px solid white; */
+    height: 40px;
+    margin-top: 25px;
+}
+
+input {
+    width: 40%;
+    height: 35px;
+    position: absolute;
+    left: 30%;
+    background-color: rgb(32, 43, 59);
+    border: none;
+    border-radius: 7px;
+}
+
+input::placeholder {
+    /* padding: 20px; */
+    font-size: 14px;
+    color: white;
+}
+
+.sea {
+    padding: 20px;
+}
+
+.sec-2 {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 260px;
+}
+
+.city {
+    /* border: 1px solid white; */
+}
+
+.city h1 {
+    color: white;
+}
+
+.city h2 {
+    color: white;
+    margin-top: 30px;
+}
+
+.img {
+    /* border:1px solid white; */
+}
+
+.img img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.sec-3-main {
+    display: flex;
+    justify-content: center;
+}
+
+.sec-3 {
+    /* border:  1px solid white; */
+    width: 40%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: rgb(32, 43, 59);
+}
+
+.sec-3 h5 {
+    color: white;
+    position: relative;
+    left: 3%;
+    top: 10px;
+}
+
+.forecast {
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    /* margin-top: 10px; */
+}
+
+.forecast img {
+    width: 70px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.forecast h6 {
+    color: white;
+    margin-left: 13px;
+}
+
+.forecast h4 {
+    color: white;
+    margin-left: 13px;
+}
+
+.one {
+    border-right: 1px solid gray;
+    /* margin-left: 15px; */
+}
+
+.two {
+    border-right: 1px solid grey;
+    padding-left: 20px;
+}
+
+.three {
+    border-right: 1px solid gray;
+    margin-left: 20px;
+}
+
+.four {
+    border-right: 1px solid gray;
+    margin-left: 20px;
+}
+
+.five {
+    border-right: 1px solid gray;
+    margin-left: 20px;
+}
+
+.six {
+
+    margin-left: 20px;
+}
+
+.sec-4-main {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.sec-4 {
+    /* border: 1px solid white; */
+    width: 40%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: rgb(32, 43, 59);
+}
+
+.sec-4 h5 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 17px;
+    /* border: 1px solid white; */
+}
+
+.first {
+    /* border: 1px solid white; */
+    display: flex;
+    margin-top: 20px;
+    gap: 220px;
+}
+
+.feel h4 {
+    /* border: 1px solid white; */
+    width: 100px;
+    margin-left: 25px;
+    color: gray;
+}
+
+.feel h2 {
+    /* border: 1px solid white; */
+    width: 100px;
+    color: white;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.wind h4 {
+    /* margin-left: 25px; */
+    /* border: 1px solid white; */
+    color: gray;
+    width: 100px;
+}
+
+.wind h2 {
+    color: white;
+    /* border: 1px solid white; */
+    width: 120px;
+    /* margin-left: 25px; */
+    margin-top: 5px;
+}
+
+.second {
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 175px;
+    margin-top: 20px;
+}
+
+.rain h4 {
+    /* border: 1px solid white; */
+    margin-left: 25px;
+    color: gray;
+    width: 150px;
+}
+
+.rain h2 {
+    /* border: 1px solid white; */
+    color: white;
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.index h4 {
+    /* border: 1px solid white; */
+    /* margin-left: 25px; */
+    color: gray;
+    width: 100px;
+}
+
+.index h2 {
+    /* border: 1px solid white; */
+    color: white;
+    /* margin-left: 25px; */
+    margin-top: 5px;
+    width: 100px;
+}
