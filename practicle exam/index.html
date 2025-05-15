@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            height: 300px;
+            width: 25%;
+        }
+        #name{
+            width: 85%;
+            height: 25px;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+        #name::placeholder{
+            font-size: 15px;
+            
+        }
+        #surname{
+            width: 85%;
+            height: 25px;
+            margin-left: 20px;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+        #surname::placeholder{
+            font-size: 15px;
+            
+        }
+        #age{
+            width: 85%;
+            height: 25px;
+            margin-left: 20px;
+            margin-top: 15px;
+            padding-left: 10px;
+        }
+        #age::placeholder{
+            font-size: 15px;
+            
+        }
+        #btn{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        #btn:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="text" placeholder="Enter your name" id="name"><br>
+        <input type="text" placeholder="Enter your surname" id="surname"><br>
+        <input type="text" placeholder="Enter your age" id="age"><br>
+        <button id="btn">Add data</button>
+
+        <ul id="list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
